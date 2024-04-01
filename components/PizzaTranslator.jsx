@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {View, Text, TextInput} from "react-native";
 
-export default function PizzaTranslator({}){
+export default function PizzaTranslator(){
   const[text, setText] = useState('');
     return (
         <View>

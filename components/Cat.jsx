@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, ScrollView, Image, TextInput} from "react-native";
+import {View, Text, Image } from "react-native";
 
 export default function Cat({name, num}){
     return (
@@ -13,14 +13,7 @@ export default function Cat({name, num}){
               style={{width: 200, height: 200}}
             />
           </View>
-          <TextInput
-            style={{
-              height: 40,
-              borderColor: 'gray',
-              borderWidth: 1,
-            }}
-            defaultValue="이곳은 입력 영역~"
-          />
+          
         </View>
       );
 }

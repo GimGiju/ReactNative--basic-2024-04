@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TouchableOpacity, View } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 // export default function Counter() {
 //   const [count, setCount] = useState(0);      // const [count, setCount] = useState(0);: useState 훅을 사용하여 count라는 상태 변수와 해당 상태를 업데이트하는 setCount 함수를 선언합니다.(0)으로 초기값으로 0을 설정합니다.
@@ -65,10 +65,10 @@ export default function Counter() {
       <View style={styles.container}>
         <TouchableOpacity
           key='1' style={styles.button} 
-          onPress={() => setCount(count+1)}
+          onPress={() => setCount(count+1)} 
           disabled={count>=5}
         >
-          <Text style={styles.buttonLabel}>{count<5 ? '증가시키기' : '그만해'}</Text>
+          <Text style={styles.buttonLabel}>{count<5 ? '증가' : '그만'}</Text>
         </TouchableOpacity>
         <TouchableOpacity 
           key='2' style={styles.button}
