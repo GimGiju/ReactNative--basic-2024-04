@@ -7,12 +7,18 @@ import SectionListBasic from './components/SectionListBasic';
 import FetchExample from './components/FetchExample';
 import FlatListBasic from './components/FlatListBasic';
 import Counter from './components/Counter';
+import Counter2 from './components/Counter2';
+import Fruit from './components/Fruit';
 
 const logo = { uri: 'https://reactnative.dev/img/tiny_logo.png', width: 32, height: 32, };
 
 export default function App() {
   return (
     <ScrollView style={{paddingTop: 24, paddingLeft: 2}}>
+      <Image source={logo} />
+      <Fruit />
+      <Image source={logo} />
+      <Counter2 />
       <Image source={logo} />
       <Counter />
       <Image source={logo} />
